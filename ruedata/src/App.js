@@ -104,7 +104,7 @@ class App extends Component {
     const { form } = this.state;
     return (
       <div className="App">
-        <FindPalindromos />
+        
         <div className="btn">
           <button className={"btn btn-success"} onClick={() => { this.setState({ form: null, tipoModal: 'Crear' }); this.setInsertar() }}>Agregar</button>
 
@@ -173,8 +173,10 @@ class App extends Component {
             <button className="btn btn-secundary" onClick={() => this.setState({ delete: false })}>No</button>
           </ModalFooter>
         </Modal>
+        <FindPalindromos />
       </div>
     );
+    
   }
 }
 
